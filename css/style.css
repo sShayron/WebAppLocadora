@@ -5911,7 +5911,9 @@ button.close {
     width: 400px;
     padding: 20px;
     background-color: rgba(63, 63, 63, 0.5);
-    border-radius: 10px; }
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(63, 63, 63, 0.7);
+            box-shadow: 0px 0px 5px 3px rgba(63, 63, 63, 0.7); }
   .login__remeber-me {
     margin-left: 30px; }
   .login__forgot-pass {
@@ -5926,7 +5928,7 @@ button.close {
   .login .google {
     background: #c32f10; }
 
-.form-control {
+.form-control__login {
   height: 42px; }
 
 #main-wrapper {
