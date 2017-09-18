@@ -1,0 +1,14 @@
+header {
+}
+.brand {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    width: 260px;
+    background-color: $brand-primary;
+    box-shadow: inset 0px 0px 40px 15px rgb(140, 0, 0);
+}

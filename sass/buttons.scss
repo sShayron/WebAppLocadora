@@ -1,0 +1,18 @@
+.button {
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    &__social {
+        color: white;
+        width: 100%;
+        i {
+            color: white;
+        }
+        &:hover {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

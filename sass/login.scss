@@ -1,0 +1,43 @@
+.teaser {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-top: 100px;
+    color: white;
+    // text-shadow: 2px 2px $black;
+    h4 {
+        margin: 0px 0 10px;
+    }
+    &__wrapper {
+        width: 400px;
+        padding: 20px;
+        background-color: rgba(63, 63, 63, 0.5);
+        border-radius: 10px;
+    }
+    &__remeber-me {
+        margin-left: $grid-gutter-width;
+    }
+    &__forgot-pass {
+        margin-left: $grid-gutter-width/2;
+    }
+    &__or {
+        line-height: 2;
+        margin: 0;
+    }
+    .facebook {
+        background: #3b5998;
+    }
+    .twitter {
+        background: #00aced;
+    }
+    .google {
+        background: #c32f10;
+    }
+}

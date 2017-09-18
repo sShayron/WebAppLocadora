@@ -1,0 +1,71 @@
+.sidebar {
+    z-index: 1;
+    position:absolute;
+    width: 260px;
+    height: calc(100vh - 62px);
+    overflow-y: auto;
+    background-color: $black;
+    box-shadow: inset 0px 0px 170px 15px $blacker;
+    .user {
+        text-align: center;
+        padding: 20px 0;
+        &__photo {
+            img {
+                border-radius: 50%;
+                border: 1px solid $brand-primary;
+                padding: 5px;
+            }
+        }
+        &__name {
+            color: white;
+            padding: 10px;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        &-item {
+            color: white;
+            border-top: 1px solid $gray;
+            margin: 0 10px;
+            cursor: pointer;
+            &.active {
+                background-color: $blacker;
+                a {
+                    color: $brand-primary;
+                }
+            }
+            &:hover {
+                background-color: $blacker;
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color:white;
+                font-size: 16px;
+                line-height: 60px;
+                &:hover, &:active, &:focus {
+                    text-decoration: none;
+                }
+            }
+            &--exit {
+                background-color: red;
+                margin: 20px;
+                a {
+                    line-height: 25px;
+                }
+                &:hover {
+                    background-color: $brand-primary;
+                    margin: 20px;
+                    padding: 10px 0;
+                }
+            }
+            .icon {
+                line-height: 0;
+                font-size: 20px;
+                margin: 0 10px;
+            }
+        }
+    }
+}

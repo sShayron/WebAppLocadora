@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>PassaTempo Locadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/fullpage.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/> -->
+</head>
+
+<body class="">
+    <div id="main-wrapper">
+        <header>
+            <div class="brand">
+                PassaTempo
+            </div>
+        </header>
+
+        <!-- SIDEBAR  -->
+        <div class="sidebar">
+            <div class="user">
+                <div class="user__photo">
+                    <img src="./images/user.png" alt="Shayron">
+                </div>
+                <div class="user__name">
+                    Shayron Aguiar <br>
+                    Perfil: administrador
+                </div>
+            </div>
+
+            <!-- MENU FULLPAGE -->
+            <ul class="sidebar__list" id="menuFullPage">
+                <li class="sidebar__list-item active" data-menuanchor="filmes">
+                    <a href="#filmes">
+                        <i class="icon glyphicon glyphicon-film"></i>
+                        Filmes
+                    </a>
+                </li>
+                <li class="sidebar__list-item" data-menuanchor="distribuidores">
+                    <a href="#distribuidores">
+                        <i class="icon fa fa-building-o" aria-hidden="true"></i>
+                        Distribuidores
+                    </a>
+                </li>
+                <li class="sidebar__list-item" data-menuanchor="clientes">
+                    <a href="#clientes">
+                        <i class="icon fa fa-users" aria-hidden="true"></i>
+                        Clientes
+                    </a>
+                </li>
+                <li class="sidebar__list-item sidebar__list-item--exit button">
+                    <a href="login.html"> Sair</a>
+                </li>
+            </ul>
+            <!-- /MENU FULLPAGE -->
+        </div> 
+        <!-- /. SIDEBAR  -->
+
+        <!-- #FULLPAGE.PAGE-WRAPPER  -->
+        <div id="fullpage" class="page-wrapper">
+
+            <!-- SECTION FILMES -->
+            <div class="section section__filmes active" data-anchor="filmes">
+                SECTION FILMES
+            </div>
+            <!-- /SECTION FILMES -->
+
+            <!-- SECTION DISTRIBUIDORES -->
+            <div class="section section__distribuidores" data-anchor="distribuidores">
+                SECTION DISTRIBUIDORES
+            </div>
+            <!-- /SECTION DISTRIBUIDORES -->
+
+            <!-- SECTION CLIENTES -->
+            <div class="section section__clientes" data-anchor="clientes">
+                SECTION CLIENTES
+            </div>
+            <!-- /SECTION CLIENTES -->
+
+        </div>
+        <!-- / #FULLPAGE.PAGE-WRAPPER  -->
+
+        <footer>
+            <div></div>
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery.js -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap-3.3.6.js"></script>
+    <!-- FullPage JS -->
+    <script src="js/fullPage-2.9.4.js"></script>
+    <!-- Select2 JS -->
+    <script src="js/select2-4.0.3.full.min.js"></script>
+
+    <!--Application script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
