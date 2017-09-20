@@ -1,0 +1,14 @@
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    &--alugado {
+        background-color: #f0ad4e;
+    }
+    &--disponivel {
+        background-color: #5cb85c;
+    }
+    &--indisponivel {
+        background-color: #d9534f;
+    }
+}

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/select2.css"/>
     <link rel="stylesheet" href="css/fullpage.css"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/> -->
 </head>
 
 <body class="">
@@ -62,8 +62,155 @@
         <div id="fullpage" class="page-wrapper">
 
             <!-- SECTION FILMES -->
-            <div class="section section__filmes active" data-anchor="filmes">
-                SECTION FILMES
+            <div class="container section section__filmes active" data-anchor="filmes">
+                
+                <div class="row section__header section__filmes__header">
+
+                    <div class="col-xs-4">
+                        <div class="select__wrapper">
+                            <label for="genero">Gênero</label> <br>
+                            <select class="multiple-select" name="genero[]" multiple="multiple">
+                                <option value="acao">Ação</option>
+                                <option value="animacao">Animação</option>
+                                <option value="aventura">Aventura</option>
+                                <option value="comedia">Comédia</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-4">
+                        <div class="select__wrapper">
+                            <label for="midia">Tipo de mídia</label> <br>
+                            <select class="multiple-select" name="midia[]" multiple="multiple">
+                                <option value="dvd">DVD</option>
+                                <option value="vhs">VHS</option>
+                                <option value="blu-ray">Blu-ray</option>
+                                <option value="hd-dvf">HD-DVD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="search__wrapper">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Procurar filme...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-search" type="button">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /section__header -->
+
+                <div class="section__body section__filmes__body">
+                    <div class="row">
+                        <div class="col-xs-5 col-xs-offset-7">
+                            <div class="actions__wrapper clear-all">
+                                <button type="button" class="btn btn-primary pull-right">Adicionar filme</button>
+                                <button type="button" class="btn btn-warning pull-right">Alugar filme</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li class="list__header">
+                            <div class="col-xs-1">
+                                *
+                            </div>
+                            <div class="col-xs-2 ">
+                                <span>Capa</span>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <span>Nome</span>
+                            </div>
+                            <div class="col-xs-3 ">
+                                <span>Descrição</span>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <span>Gênero</span>
+                            </div>
+                            <div class="col-xs-1 ">
+                                <span>Mídias</span>
+                            </div>
+                            <div class="col-xs-1 text-center">
+                                <span>Status</span>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="col-xs-1 list__item__select">
+                                <input type="checkbox" />
+                            </div>
+                            <div class="col-xs-2 list__item__capa">
+                                <img src="./images/capa-filme-inferno.jpg" />
+                            </div>
+                            <div class="col-xs-2 list__item__nome">
+                                INFERNO
+                            </div>
+                            <div class="col-xs-3 list__item__descricao">
+                                O simbologista Robert Langdon e uma médica viajam pela Europa para deter o plano de um lunático de disseminar um vírus mortal.
+                            </div>
+                            <div class="col-xs-2 list__item__genero">
+                                Mistério
+                            </div>
+                            <div class="col-xs-1 list__item__midias">
+                                DVD<br> Blu-Ray
+                            </div>
+                            <div class="col-xs-1 list__item__status text-center">
+                                <div class="circle circle--alugado"></div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="col-xs-1 list__item__select">
+                                <input type="checkbox" />
+                            </div>
+                            <div class="col-xs-2 list__item__capa">
+                                <img src="./images/capa-filme-inferno.jpg" />
+                            </div>
+                            <div class="col-xs-2 list__item__nome">
+                                INFERNO
+                            </div>
+                            <div class="col-xs-3 list__item__descricao">
+                                O simbologista Robert Langdon e uma médica viajam pela Europa para deter o plano de um lunático de disseminar um vírus mortal.
+                            </div>
+                            <div class="col-xs-2 list__item__genero">
+                                Mistério
+                            </div>
+                            <div class="col-xs-1 list__item__midias">
+                                DVD<br> Blu-Ray
+                            </div>
+                            <div class="col-xs-1 list__item__status text-center">
+                                <div class="circle circle--indisponivel"></div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="col-xs-1 list__item__select">
+                                <input type="checkbox" />
+                            </div>
+                            <div class="col-xs-2 list__item__capa">
+                                <img src="./images/capa-filme-inferno.jpg" />
+                            </div>
+                            <div class="col-xs-2 list__item__nome">
+                                INFERNO
+                            </div>
+                            <div class="col-xs-3 list__item__descricao">
+                                O simbologista Robert Langdon e uma médica viajam pela Europa para deter o plano de um lunático de disseminar um vírus mortal.
+                            </div>
+                            <div class="col-xs-2 list__item__genero">
+                                Mistério
+                            </div>
+                            <div class="col-xs-1 list__item__midias">
+                                DVD<br> Blu-Ray
+                            </div>
+                            <div class="col-xs-1 list__item__status text-center">
+                                <div class="circle circle--disponivel"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /section__body -->
+
             </div>
             <!-- /SECTION FILMES -->
 

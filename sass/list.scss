@@ -1,0 +1,43 @@
+.fp-tableCell {
+    display: block!important;
+}
+
+.list {
+    list-style: none;
+    border: 1px solid $black;
+    padding: 0;
+    &__header, &__item {
+        border-bottom: 1px solid black;
+        &:before, &:after {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            clear: both;
+        }
+        div {
+            display: inline-block;
+        }
+    }
+    &__header {
+        padding: 10px;
+        div {
+            padding: 0 5px;
+        }
+    }
+    &__item {
+        padding: 5px;
+        div {
+            padding: 10px 5px 0 ;
+        }
+        &__select {
+            line-height: 130px;
+        }
+        &__capa {
+            padding-top: 0!important;
+            img {
+                width: 90px;
+            }
+        }
+    }
+}

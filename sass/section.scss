@@ -1,0 +1,41 @@
+.section {
+    &__header {
+        margin-bottom: 20px;
+        border-bottom: 1px solid $black;
+    }
+
+    .actions {
+        &__wrapper {
+            margin-bottom: 20px;
+        }
+    }
+
+    .search {
+        &__wrapper {
+            margin-top: 33px;
+
+            .input-group .form-control, .btn-search {
+                border-color: $black!important;
+            }
+            .btn-search {
+                &:hover {
+                    transition: all .3s;
+                    background-color: $brand-primary;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .select {
+        &2 {
+            &-container {
+                min-width: 200px;
+            }
+        }
+        &__wrapper {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+    }
+}

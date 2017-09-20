@@ -5931,6 +5931,72 @@ button.close {
 .form-control__login {
   height: 42px; }
 
+.section__header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3F3F3F; }
+
+.section .actions__wrapper {
+  margin-bottom: 20px; }
+
+.section .search__wrapper {
+  margin-top: 33px; }
+  .section .search__wrapper .input-group .form-control, .section .search__wrapper .btn-search {
+    border-color: #3F3F3F !important; }
+  .section .search__wrapper .btn-search:hover {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background-color: #FF4949;
+    color: white; }
+
+.section .select2-container {
+  min-width: 200px; }
+
+.section .select__wrapper {
+  display: inline-block;
+  margin: 10px 20px; }
+
+.fp-tableCell {
+  display: block !important; }
+
+.list {
+  list-style: none;
+  border: 1px solid #3F3F3F;
+  padding: 0; }
+  .list__header, .list__item {
+    border-bottom: 1px solid black; }
+    .list__header:before, .list__header:after, .list__item:before, .list__item:after {
+      content: " ";
+      display: table; }
+    .list__header:after, .list__item:after {
+      clear: both; }
+    .list__header div, .list__item div {
+      display: inline-block; }
+  .list__header {
+    padding: 10px; }
+    .list__header div {
+      padding: 0 5px; }
+  .list__item {
+    padding: 5px; }
+    .list__item div {
+      padding: 10px 5px 0; }
+    .list__item__select {
+      line-height: 130px; }
+    .list__item__capa {
+      padding-top: 0 !important; }
+      .list__item__capa img {
+        width: 90px; }
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; }
+  .circle--alugado {
+    background-color: #f0ad4e; }
+  .circle--disponivel {
+    background-color: #5cb85c; }
+  .circle--indisponivel {
+    background-color: #d9534f; }
+
 #main-wrapper {
   position: relative;
   width: 100%; }
@@ -5942,3 +6008,19 @@ button.close {
 
 a:hover {
   text-decoration: none; }
+
+.btn {
+  border-radius: 3px;
+  margin: 0px 5px; }
+
+.form-control:focus {
+  -webkit-box-shadow: inset 0 0px 0px #FF4949, 0 0 8px #FF4949;
+          box-shadow: inset 0 0px 0px #FF4949, 0 0 8px #FF4949;
+  border-color: #FF4949; }
+
+.clear-all:before, .clear-all:after {
+  content: " ";
+  display: table; }
+
+.clear-all:after {
+  clear: both; }
