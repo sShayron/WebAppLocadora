@@ -11,6 +11,11 @@ $(document).ready(function() {
         maximumSelectionLength: -1
     });
 
+    // Initialize select2 multiselect
+    $(".selecter").select2({
+        minimumResultsForSearch: 2
+    });
+
 });
 
 

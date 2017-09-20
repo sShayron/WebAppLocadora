@@ -5953,7 +5953,7 @@ button.close {
 
 .section .select__wrapper {
   display: inline-block;
-  margin: 10px 20px; }
+  margin: 10px 5px; }
 
 .fp-tableCell {
   display: block !important; }
@@ -6004,6 +6004,10 @@ button.close {
 #main-wrapper {
   position: relative;
   width: 100%; }
+
+.selecter {
+  width: 200px;
+  height: 80px; }
 
 .page-wrapper {
   margin: 0 0 0 260px;
