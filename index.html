@@ -110,7 +110,7 @@
                     <div class="row">
                         <div class="col-xs-5 col-xs-offset-7">
                             <div class="actions__wrapper clear-all">
-                                <button type="button" class="btn btn-primary pull-right">Adicionar filme</button>
+                                <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modalEditFilme">Adicionar filme</button>
                                 <button type="button" class="btn btn-warning pull-right">Alugar filme</button>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                 <span>Nome</span>
                             </div>
                             <div class="col-xs-3 ">
-                                <span>Descrição</span>
+                                <span>Sinopse</span>
                             </div>
                             <div class="col-xs-2 ">
                                 <span>Gênero</span>
@@ -139,7 +139,7 @@
                                 <span>Status</span>
                             </div>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item" data-toggle="modal" data-target="#modalEditFilme">
                             <div class="col-xs-1 list__item__select">
                                 <input type="checkbox" />
                             </div>
@@ -244,8 +244,95 @@
     <script src="js/fullPage-2.9.4.js"></script>
     <!-- Select2 JS -->
     <script src="js/select2-4.0.3.full.min.js"></script>
-
     <!--Application script -->
     <script src="js/script.js"></script>
 </body>
+
+<!-- ************* MODAIS DAQUI PRA BAIXO*********** -->
+
+<!-- Modal EditFilme -->
+<div class="modal fade" id="modalEditFilme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="clear-all"></div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="textoinput" value="INFERNO">
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="tituloorigin">Título original</label>
+                    <input type="text" class="form-control" id="tituloorigin" placeholder="" value="INFERNO">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <label for="">Sinopse</label>
+                    <textarea class="form-control" rows="4">O simbologista Robert Langdon e uma médica viajam pela Europa para deter o plano de um lunático de disseminar um vírus mortal.
+                    </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="capa">Capa</label>
+                    <input type="file" id="capa">
+                    <p class="help-block">Inclua arquivo de imagem da capa.</p>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="">Gênero</label>
+                    <textarea class="form-control" rows="1">Mistério
+                    </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                        <label for="">Elenco</label>
+                        <textarea class="form-control" rows="5">
+Tom Hanks
+Felicity Jones
+Omar Sy
+Irrfan Khan
+                        </textarea>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="">Direção</label>
+                    <textarea class="form-control" rows="3">Ron Howard</textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-sm-6'>
+                    <div class="form-group">
+                        <label for="">Data lançamento:</label>
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-xs-6">
+                    <label for="">País</label>
+                    <textarea class="form-control" rows="1">
+                    </textarea>
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Lançamento
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+    </div>
+    </div>
+</div><!-- Modal EditFilme -->
+
+
 </html>

@@ -5976,7 +5976,8 @@ button.close {
     .list__header div {
       padding: 0 5px; }
   .list__item {
-    padding: 5px; }
+    cursor: pointer;
+    padding: 5px 5px 0; }
     .list__item div {
       padding: 10px 5px 0; }
     .list__item__select {
@@ -6004,7 +6005,16 @@ button.close {
 .page-wrapper {
   margin: 0 0 0 260px;
   padding: 15px 30px;
-  min-height: calc(100vh - 62px); }
+  min-height: calc(100vh - 62px);
+  margin-top: -60px; }
+
+.modal-content {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px rgba(130, 37, 37, 0.61) !important;
+          box-shadow: 0 5px 15px rgba(130, 37, 37, 0.61) !important; }
+
+.modal-dialog {
+  margin: 15px auto !important; }
 
 a:hover {
   text-decoration: none; }
